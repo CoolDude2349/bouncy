@@ -328,6 +328,7 @@ function createUnityInstance(t, n, l) {
     u.fetchWithProgress = function(e, t) {
          if (e[0] === "/") {
           e = e.slice(1)
+            e = "https://cdn.jsdelivr.net/gh/CoolDude2349/bouncy@main/" + e
         }
         var n = function() {};
         return t && t.onProgress && (n = t.onProgress),
