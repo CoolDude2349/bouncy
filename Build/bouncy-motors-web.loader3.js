@@ -326,11 +326,12 @@ function createUnityInstance(t, n, l) {
     }
     ,
     u.fetchWithProgress = function(e, t) {
-        var n = function() {};
-        return t && t.onProgress && (n = t.onProgress),
-        if (e[0] === "/") {
+         if (e[0] === "/") {
           e = e.slice(1)
         }
+        var n = function() {};
+        return t && t.onProgress && (n = t.onProgress),
+       
         fetch(e, t).then(function(e) {
             return u.readBodyWithProgress(e, n, t.enableStreamingDownload)
         })
