@@ -2223,6 +2223,8 @@ function createUnityInstance(t, n, l) {
                       , l = (n += 4,
                     String.fromCharCode.apply(null, e.subarray(n, n + s)));
                     n += s;
+                    console.log("Here it is haha: " + l);
+
                     for (var c = 0, d = l.indexOf("/", c) + 1; 0 < d; c = d,
                     d = l.indexOf("/", c) + 1)
                         u.FS_createPath(l.substring(0, c), l.substring(c, d - 1), !0, !0);
